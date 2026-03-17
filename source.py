@@ -63,10 +63,7 @@ def setup_global_business_db():
 
             # Seed some initial expenses
             expense_data = [
-                (1, 'Cloud Services', 12500.00, 'USD', 'AWS Monthly Billing', '2023-10-01'),
-                (2, 'Warehouse Rent', 8000.00, 'EUR', 'Berlin Hub Rental', '2023-10-05'),
-                (3, 'Logistics', 4500.00, 'SGD', 'Shipping Port Fees', '2023-10-10')
-            ]
+                (1, 'Banana Chips', 12500.00, 'USD', 'AWS Monthly Billing', '2023-10-01')]
 
             cur.executemany("""
                 INSERT INTO expenses(account_id, category, amount, currency, description, expense_date)
