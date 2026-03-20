@@ -50,10 +50,6 @@ def setup_global_business_db():
 
             # Seed initial Global Accounts
             business_data = [
-                ('TechNova Solutions', 'North America', 'USD', 500000.00),
-                ('EuroLogistics GmbH', 'Europe', 'EUR', 350000.00),
-                ('Orient Trading Co.', 'Asia-Pacific', 'SGD', 200000.00),
-                ('Andean Mining Group', 'South America', 'CLP', 1000000.00)
             ]
             
             cur.executemany("""
